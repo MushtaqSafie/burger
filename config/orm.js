@@ -7,14 +7,14 @@ const orm = {
       console.log(result);
     });
   },
-  insertOne(burger_name, devoured) {
-    connection.query('INSERT INTO burgers(burger_name, devoured) VALUES (?, ?)', [burger_name, devoured], (err, result) => {
+  insertOne(tableName, fieldOne, fieldTwo, valueOne, valueTwo) {
+    connection.query('INSERT INTO ?? ( ?? , ?? ) VALUES (?, ?)', [tableName, fieldOne, fieldTwo, valueOne, valueTwo], (err, result) => {
       if (err) throw err;
       console.log(result);
     });
   },
-  updateOne(fieldID, burger_name, devoured) {
-    connection.query('UPDATE burgers SET burger_name = ?, devoured = ? WHERE id = ?', [burger_name, devoured, fieldID], (err, result) => {
+  updateOne(tableName, fieldID, valueID, fieldOne, valueOne, fieldTwo, valueTwo) {
+    connection.query('UPDATE ?? SET ?? = ?, ?? = ? WHERE ?? = ?', [tableName, fieldOne, valueOne, fieldTwo, valueTwo, fieldID, valueID], (err, result) => {
       if (err) throw err;
       console.log(result);
     });
