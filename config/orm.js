@@ -13,8 +13,8 @@ const orm = {
       cb(result);
     });
   },
-  updateOne(tableName, fieldID, valueID, fieldOne, valueOne, fieldTwo, valueTwo, cb) {
-    connection.query('UPDATE ?? SET ?? = ?, ?? = ? WHERE ?? = ?', [tableName, fieldOne, valueOne, fieldTwo, valueTwo, fieldID, valueID], (err, result) => {
+  updateOne(tableName, fieldID, valueID, fieldOne, valueOne, cb) {
+    connection.query('UPDATE ?? SET ?? = ? WHERE ?? = ?', [tableName, fieldOne, valueOne, fieldID, valueID], (err, result) => {
       if (err) throw err;
       cb(result);
     });
@@ -22,6 +22,3 @@ const orm = {
 };
 
 module.exports = orm;
-
-
-
