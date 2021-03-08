@@ -12,6 +12,7 @@ Burger logger a web application build with MySQL, Node, Express, and Handlebars 
 - [Questions](#Questions)
 
 ## Installation
+Clone the current repository and run
 ```
 node server.js
 ```
@@ -19,7 +20,7 @@ node server.js
 OR [Click Here](https://dashboard.heroku.com/apps/fathomless-oasis-74531) to visit the heroku deployed page
 
 ## ScreenShot
-![Image of webpage]()
+![Image of webpage](https://raw.githubusercontent.com/MushtaqSafie/burger/main/media/Capture.JPG)
 
 ## License
 This application is covered under the MIT License.
