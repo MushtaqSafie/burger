@@ -12,6 +12,10 @@ const burger = {
   update(id, valOne, cb) {
     orm.updateOne('burgers', 'id', id, 'devoured', valOne, (res) => cb(res));
   },
+
+  delete(id, cb) {
+    orm.deleteOne('burgers', 'id', id, (res) => cb(res));
+  }
 };
 
 module.exports = burger;

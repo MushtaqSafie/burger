@@ -19,6 +19,12 @@ const orm = {
       cb(result);
     });
   },
+  deleteOne(tableName, fieldID, valueID, cb) {
+    connection.query('DELETE FROM ?? WHERE ?? = ?', [tableName, fieldID, valueID], (err, result) => {
+      if (err) throw err;
+      cb(result);
+    });
+  }
 };
 
 module.exports = orm;
