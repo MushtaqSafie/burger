@@ -5,9 +5,9 @@
   /* background-color: yellowgreen; */
 }
 
-body {
+/* body {
   background-color: yellowgreen;
-}
+} */
 
 .title {
   margin-left: 10px;
@@ -29,7 +29,7 @@ body {
   float: left;
   background-color: rgba(128, 173, 118, 0.433);
   box-sizing: border-box;
-  width: 48%;
+  width: 45%;
   border-radius: 16px;
   margin-left: 10px;
   margin-right: 10px;
@@ -55,7 +55,7 @@ li {
   padding: 5px 10px;
   margin: 2px;
   margin-bottom: 5px;
-  border: 2px khaki solid;
+  border: 2px rgb(109, 109, 109) solid;
   border-radius: 10px;
   opacity: 1 !important;
 }
@@ -85,4 +85,10 @@ li {
   border-radius: 15px;
   background-color: rgba(58, 58, 58, 0.508);
   color: aliceblue;
+}
+
+
+.canvas {
+  position: fixed;
+  opacity: 0.5;
 }

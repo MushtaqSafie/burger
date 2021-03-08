@@ -1,5 +1,3 @@
-console.log('helo');
-
 document.addEventListener('DOMContentLoaded', (e) => {
   if (e) {
     console.log('DOM loaded');
@@ -9,7 +7,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
   if (changeDevorBtn) {
     changeDevorBtn.forEach((btn) => {
       btn.addEventListener('click', (e) => {
-        console.log('helos2');
         const id = e.target.getAttribute('data-id');
 
         const updateDevor = {
