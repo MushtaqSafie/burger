@@ -17,7 +17,7 @@ Clone the current repository and run
 node server.js
 ```
 
-OR [Click Here](https://dashboard.heroku.com/apps/fathomless-oasis-74531) to visit the heroku deployed page
+OR [Click Here](https://fathomless-oasis-74531.herokuapp.com/) to visit the heroku deployed page
 
 ## ScreenShot
 ![Image of webpage](https://raw.githubusercontent.com/MushtaqSafie/burger/main/media/Capture.JPG)
